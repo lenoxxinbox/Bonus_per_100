@@ -6,7 +6,7 @@ public class Main {
         int bonus; // Бонус за пополнение баланса
         int finalAmountWithBonuses; // Итоговая сумма на счету
 
-        if (depositAmount >= 1_000) { // Если сумма пополнения равна или больше 1 000 рублей
+        if (depositAmount > 1_000) { // Если сумма пополнения больше 1 000 рублей
             bonus = depositAmount / 100; // Подсчитывается количество бонусов на сумму пополнения
             finalAmountWithBonuses = accountBalance + depositAmount + bonus; // Подсчитывается итоговая сумма на счету
         } else {
