@@ -1,26 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        // Объявляете переменные для входных данных и
-        // параметров программы: начального счёта,
-        // суммы пополнения и тп
+        int accountBalance = 582; // РћСЃС‚Р°С‚РѕРє РїРѕ СЃС‡РµС‚Сѓ
+        int depositAmount = 1_893; // РџРѕРїРѕР»РЅРµРЅРёРµ СЃС‡РµС‚Р°
+        int bonus; // Р‘РѕРЅСѓСЃ Р·Р° РїРѕРїРѕР»РЅРµРЅРёРµ Р±Р°Р»Р°РЅСЃР°
+        int finalAmountWithBonuses; // РС‚РѕРіРѕРІР°СЏ СЃСѓРјРјР° РЅР° СЃС‡РµС‚Сѓ
 
-        int accountBalance = 582;
-        int depositAmount = 1_893;
-        int bonus;
-        int finalAmountWithBonuses;
-
-        // Условным оператором проверяете превысила ли
-        // сумма пополнения порог и для этих двух разных
-        // сценариев рассчитываете сумму бонуса и выводите
-        // на экран.
-
-        if (depositAmount >= 1_000) {
-            bonus = depositAmount / 100;
-            finalAmountWithBonuses = accountBalance + depositAmount + bonus;
+        if (depositAmount >= 1_000) { // Р•СЃР»Рё СЃСѓРјРјР° РїРѕРїРѕР»РЅРµРЅРёСЏ СЂР°РІРЅР° РёР»Рё Р±РѕР»СЊС€Рµ 1 000 СЂСѓР±Р»РµР№
+            bonus = depositAmount / 100; // РџРѕРґСЃС‡РёС‚С‹РІР°РµС‚СЃСЏ РєРѕР»РёС‡РµСЃС‚РІРѕ Р±РѕРЅСѓСЃРѕРІ РЅР° СЃСѓРјРјСѓ РїРѕРїРѕР»РЅРµРЅРёСЏ
+            finalAmountWithBonuses = accountBalance + depositAmount + bonus; // РџРѕРґСЃС‡РёС‚С‹РІР°РµС‚СЃСЏ РёС‚РѕРіРѕРІР°СЏ СЃСѓРјРјР° РЅР° СЃС‡РµС‚Сѓ
         } else {
-            finalAmountWithBonuses = accountBalance + depositAmount;
+            finalAmountWithBonuses = accountBalance + depositAmount; // РРЅР°С‡Рµ РїРѕРґСЃС‡РёС‚С‹РІР°РµС‚СЃСЏ РёС‚РѕРіРѕРІР°СЏ СЃСѓРјРјР° Р±РµР· Р±РѕРЅСѓСЃРѕРІ
         }
-        System.out.println("Общая сумма на счете: " + finalAmountWithBonuses);
+        System.out.println("РћР±С‰Р°СЏ СЃСѓРјРјР° РЅР° СЃС‡РµС‚Рµ: " + finalAmountWithBonuses); // РС‚РѕРіРѕРІР°СЏ СЃСѓРјРјР° РІС‹РІРѕРґРёС‚СЃСЏ РІ РєРѕРЅСЃРѕР»СЊ
     }
 }
