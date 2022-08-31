@@ -10,8 +10,10 @@ public class Main {
             bonus = depositAmount / 100; // Подсчитывается количество бонусов на сумму пополнения
             finalAmountWithBonuses = accountBalance + depositAmount + bonus; // Подсчитывается итоговая сумма на счету
         } else {
+            bonus = 0;
             finalAmountWithBonuses = accountBalance + depositAmount; // Иначе подсчитывается итоговая сумма без бонусов
         }
         System.out.println("Общая сумма на счете: " + finalAmountWithBonuses); // Итоговая сумма выводится в консоль
+        System.out.println("Количество бонусов: " + bonus); // Количество бонусов выводится в консоль
     }
 }
