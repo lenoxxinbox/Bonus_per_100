@@ -14,3 +14,5 @@ public class Main {
         finalAmountWithBonuses = accountBalance + depositAmount + bonus; // Подсчитывается итоговая сумма на счету
         System.out.println("Общая сумма на счете: " + finalAmountWithBonuses); // Итоговая сумма выводится в консоль
         System.out.println("Количество бонусов: " + bonus);
+    }
+}
