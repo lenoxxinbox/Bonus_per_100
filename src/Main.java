@@ -9,8 +9,8 @@ public class Main {
         if (depositAmount > 1_000) { // Если сумма пополнения больше 1 000 рублей
             bonus = depositAmount / 100; // Подсчитывается количество бонусов на сумму пополнения
             finalAmountWithBonuses = accountBalance + depositAmount + bonus; // Подсчитывается итоговая сумма на счету
-        } else {
-            bonus = 0;
+        } else { // Иначе
+            bonus = 0; // Локально переопределяем bonus = 0
             finalAmountWithBonuses = accountBalance + depositAmount; // Иначе подсчитывается итоговая сумма без бонусов
         }
         System.out.println("Общая сумма на счете: " + finalAmountWithBonuses); // Итоговая сумма выводится в консоль
