@@ -11,7 +11,7 @@ public class Main {
             finalAmountWithBonuses = accountBalance + depositAmount + bonus; // Подсчитывается итоговая сумма на счету
         } else { // Иначе
             bonus = 0; // Локально переопределяем bonus = 0
-            finalAmountWithBonuses = accountBalance + depositAmount; // Иначе подсчитывается итоговая сумма без бонусов
+            finalAmountWithBonuses = accountBalance + depositAmount; // Подсчитывается итоговая сумма без бонусов
         }
         System.out.println("Общая сумма на счете: " + finalAmountWithBonuses); // Итоговая сумма выводится в консоль
         System.out.println("Количество бонусов: " + bonus); // Количество бонусов выводится в консоль
