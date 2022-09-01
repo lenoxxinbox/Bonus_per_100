@@ -8,7 +8,7 @@ public class Main {
 
         if (depositAmount > 1_000) { // Если сумма пополнения больше 1 000 рублей
             bonus = depositAmount / 100; // Подсчитывается количество бонусов на сумму пополнения
-            } else {
+        } else {
             bonus = 0; // Локально переопределяем bonus = 0
         }
         finalAmountWithBonuses = accountBalance + depositAmount + bonus; // Подсчитывается итоговая сумма на счету
